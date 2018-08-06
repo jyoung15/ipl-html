@@ -216,6 +216,13 @@ class Attributes
         return $this;
     }
 
+    public function setCallback($name, $getter, $setter = null)
+    {
+        $this->registerAttributeCallback($name, $getter, $setter);
+
+        return $this;
+    }
+
     /**
      * Callback must return an instance of Attribute
      *
