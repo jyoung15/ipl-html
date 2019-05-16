@@ -252,7 +252,7 @@ trait FormElementContainer
     public function addElementsFrom($form)
     {
         foreach ($form->getElements() as $name => $element) {
-            $this->addElement($element);
+            $this->addElement($element, $name);
         }
     }
 
